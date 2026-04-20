@@ -109,7 +109,11 @@
     .tl-compute { display: inline-block; font-size: 0.66rem; padding: 0.12rem 0.5rem; border-radius: 2px; background: rgba(106,247,200,0.08); color: var(--accent3); border: 1px solid rgba(106,247,200,0.18); margin-top: 0.35rem; }
 
     /* TESTIMONIALS */
-    .testi-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 1.5rem; }
+    .testi-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 1.5rem;
+    }
     .testi-card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 2rem; }
     .qm { font-family: 'DM Serif Display', serif; font-size: 4rem; color: var(--accent); opacity: 0.2; line-height: 0.8; margin-bottom: 1rem; }
     .testi-text { font-size: 0.82rem; color: var(--muted); font-style: italic; margin-bottom: 1.5rem; line-height: 1.8; }
@@ -356,6 +360,15 @@
         <a href="https://github.com/madhumitha998/StarTech-SilverCheetah_SCDFXIBM" target="_blank" class="art-link">View on GitHub &rarr;</a>
       </div>
 
+      <div class="art-card">
+        <div class="art-num">05</div>
+        <span class="art-lang">Java · IBM Cloud · IoT</span>
+        <h3 class="art-title">mA</h3>
+        <p class="art-desc">During the SCDF × IBM Call for Code hackathon, my team developed a Rapid-Response Emergency Detection System to address the critical need for elderly safety: the fact that falls often go undetected when a victim is too disoriented to call for help. Using IBM Cloud AI and IoT, we built a system that streams real-time data from wearable sensors to a cloud-based AI model designed to distinguish between everyday movements and actual accidents allowing a drastic reduction in response latency by automatically alerting emergency services with precise location and severity data. By moving from passive monitoring to proactive detection, the project demonstrates how we can use data and AI as a practical expression of care, ensuring that vulnerable individuals are never left invisible during a crisis.</p>
+        <div class="art-tags"><span class="tag">Java</span><span class="tag">IBM Cloud AI</span><span class="tag">IoT</span><span class="tag">Hackathon</span></div>
+        <a href="https://github.com/madhumitha998/StarTech-SilverCheetah_SCDFXIBM" target="_blank" class="art-link">View on GitHub &rarr;</a>
+      </div>
+
     </div>
   </div>
 </div>
@@ -452,45 +465,43 @@
 </div> -->
 
 <!-- TESTIMONIALS -->
-<!-- <div id="testimonials">
+<div id="testimonials">
   <div class="sw">
-    <div class="sl reveal">05 — Testimonials</div>
+    <div class="sl reveal">04 — Testimonials</div>
     <h2 class="st reveal">What people say.</h2>
-    <p class="ss reveal">Feedback from collaborators, managers, and teammates.</p>
+    <p class="ss reveal">Feedback from previous managers.</p>
     <div class="testi-grid reveal">
-      <div class="testi-card">
-        <div class="qm">"</div>
-        <p class="testi-text">Madhumitha's offline sync engine was a game-changer for our emerging market strategy. She took ownership from architecture to deployment and delivered with exceptional reliability.</p>
-        <div class="testi-author">
-          <div class="av">DM</div>
-          <div><div class="an">Engineering Lead</div><div class="ar">DiMuto Pte. Ltd.</div></div>
+        <div class="testi-card">
+          <div class="qm">"</div>
+          <p class="testi-text">I had the pleasure of working with Madhu for three years at DiMuto, and I can confidently say she is an exceptional full stack engineer.<br><br>
+  Madhu consistently demonstrated strong technical capability on the web side, but what truly stood out was her willingness to step up when the team needed to expand into mobile development. She took on the challenge head-on, putting in extra hours and quickly becoming our go-to—and ultimately only—mobile developer. That level of ownership and dedication is rare.<br><br>
+  Beyond her engineering skills, Madhu brings immense value to cross-functional discussions. She has a unique ability to provide clear, practical technical perspectives on the spot, which helps guide business decisions in the right direction. Her broad exposure to technologies—across web, mobile, AI, and IoT—also allows her to suggest thoughtful improvements to user workflows that others might not immediately see.<br><br>
+  Madhu is not just a strong engineer, but a well-rounded contributor who elevates both the technical and strategic conversations of any team she’s part of.</p>
+          <div class="testi-author">
+            <div class="av" style="background:linear-gradient(135deg,var(--accent),var(--accent2))">GY</div>
+            <div><div class="an">Enterprise Transformation Consultant</div><div class="ar">DiMuto Pte. Ltd.</div></div>
+          </div>
         </div>
-      </div>
-      <div class="testi-card">
-        <div class="qm">"</div>
-        <p class="testi-text">She has a rare ability to sit in a C-Suite requirements session and ship production-ready Flutter code by end of day. Madhumitha bridges strategy and execution better than anyone I've worked with.</p>
-        <div class="testi-author">
-          <div class="av" style="background:linear-gradient(135deg,var(--accent2),var(--accent))">SC</div>
-          <div><div class="an">Product Manager</div><div class="ar">Scholarly Pte. Ltd.</div></div>
+        <div class="testi-card">
+          <div class="qm">"</div>
+          <p class="testi-text">I was fortunate to work with Madhu for two years, and she’s truly one of the most admirable and hardworking individuals I’ve ever met. She has an incredible work ethic and puts her full effort into everything she does.<br><br>
+  Madhu is responsible, honest, empathetic, and a strong communicator who gets along well with everyone. As a software engineer and app developer, she’s a fast learner who deeply cares about the quality of her work. She’s also very dedicated and always ensures that every task is completed to a high standard and on time.<br><br>
+  If you’re fortunate enough to have Madhu on your team, I strongly recommend her. I’m confident she will be an invaluable member of any company.<br><br>
+  I’m really grateful to have had the chance to work with her, and I have no doubt she’ll continue to do great things wherever she goes.</p>
+          <div class="testi-author">
+            <div class="av" style="background:linear-gradient(135deg,var(--accent2),var(--accent3))">CG</div>
+            <div><div class="an">Co-founder</div><div class="ar">Scholarly Pte. Ltd.</div></div>
+          </div>
         </div>
-      </div>
-      <div class="testi-card">
-        <div class="qm">"</div>
-        <p class="testi-text">During the SCDF × IBM hackathon, Madhumitha was our technical backbone — rapidly prototyping under pressure while keeping the solution grounded in real user needs.</p>
-        <div class="testi-author">
-          <div class="av" style="background:linear-gradient(135deg,var(--accent3),var(--accent))">ST</div>
-          <div><div class="an">Team Lead</div><div class="ar">SCDF × IBM Hackathon</div></div>
-        </div>
-      </div>
     </div>
   </div>
-</div> -->
+</div>
 
 <!-- CONTACT -->
 <div id="contact" class="ct-bg">
   <div class="ct-inner">
     <div>
-      <div class="sl reveal">04 — Contact</div>
+      <div class="sl reveal">05 — Contact</div>
       <h2 class="st reveal">Let's build something.</h2>
       <p class="ss reveal" style="margin-bottom:0">I'm open to full-time roles, contract work, and interesting collaborations worldwide.</p>
     </div>
